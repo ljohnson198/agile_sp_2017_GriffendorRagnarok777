@@ -1,8 +1,10 @@
 <!Doctype html>
 <html>
 <head>
-<title>Chippewa Valley - The One</title>
-<meta>
+  <meta charset="utf-8">
+  <title>Chippewa Valley - The One</title>
+  <link rel="stylesheet" href="../stylesheets/application.css" type="text/css"/>
+  <link rel="stylesheet" href="../stylesheets/home.css.scss" type="text/css"/>
 </head>
 <body>
 	<nav>
@@ -14,7 +16,42 @@
 		</ul>
 	</nav>
   <h1>Home#signup</h1>
-  <p>Find me in app/views/home/signup.html.erb</p>
+  <div class="signUp">
+  <div>
+     <div id="signupTxt">
+       <h1>Sign Up for Free</h1>
+
+       <form action="/" method="post">
+
+       <div class="formProperties">
+         <label>First Name<span class="req">*</span></label>
+         <input type="text" />
+         <label>Last Name: <span class="req">*</span></label>
+         <input type="text" />
+         <label>Email Address<span class="req">*</span></label>
+         <input type="email" />
+         <label>Set Password: <span class="req">*</span></label>
+         <input type="password" />
+
+         <p>
+          <input type="radio" name="driver" value="driver"> Driver<br>
+          <input type="radio" name="rider" value="rider"> Rider
+        </p>
+
+        <button type="submit" class="button button-block"/>Sign Up Today!</button>
+        <p>Already have an account? <a href="#signin">Click Here</a> to sign in</p>
+       </div>
+
+       </form>
+
+     </div>
+
+
+     </div>
+
+   </div>
+
+</div>
 </body>
 
 <div>

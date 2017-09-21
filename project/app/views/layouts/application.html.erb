@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Project</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
+<html lang="en-US">
+  <head>
+    <title>Chippewa Valley The One</title>
+    <%= stylesheet_link_tag 'application',
+    media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
 <body>
-
-<%= yield %>
-
-</body>
+    <div class="container">
+      <header>
+        <h1>Our Ride Share App</h1>
+      </header>
+      <section class="content">
+        <%= yield %>
+      </section>
+      <footer>
+        <h4>Copyright <%=Date.today.year %> GriffendorRagnarok777</h4>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <title>Chippewa Valley The One</title>
+    <title><%= @title %></title>>
     <%= stylesheet_link_tag 'application',
     media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -13,6 +13,16 @@
         <h1>Our Ride Share App</h1>
       </header>
       <section class="content">
+        <nav>
+          <%=link_to_unless_current 'Home', root_url %>
+          <%=link_to_unless_current 'Signup', users_url %>
+          <%=link_to_unless_current 'Profile', user_profiles_url %>
+          </ Need to add address as soon as address database is rebuilt and fixed-->
+          <%=link_to_unless_current 'Signin', signin_url %>
+          <%=link_to_unless_current 'Drive', drive_url %>
+          <%=link_to_unless_current 'Ride', ride_url %>
+        </nav>
+
         <%= yield %>
       </section>
       <footer>

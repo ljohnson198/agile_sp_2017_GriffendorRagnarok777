@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  resources :user_profiles
 
-  get 'home/ride'
+  resources :users
 
-  get 'home/drive'
+  root controller: 'home', action: 'index'
 
-  get 'home/signin'
+  get "/ride", controller: 'home', action: 'ride', as: 'ride'
 
-  get 'home/signup'
+  get "/drive", controller: 'home', action: 'drive', as: 'drive'
+
+  get "/signin", controller: 'home', action: 'signin', as: 'signin'
+
+  get "/signup", controller: 'home', action: 'signup', as: 'signup'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

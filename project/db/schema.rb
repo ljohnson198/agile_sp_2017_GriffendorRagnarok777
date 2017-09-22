@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170921234126) do
+ActiveRecord::Schema.define(version: 20170922220319) do
 
   create_table "user_addresses", force: true do |t|
     t.text     "userName"
     t.text     "streetAddress"
     t.text     "City"
     t.text     "State"
+    t.text     "Zip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "zip"
   end
 
   create_table "user_profiles", force: true do |t|

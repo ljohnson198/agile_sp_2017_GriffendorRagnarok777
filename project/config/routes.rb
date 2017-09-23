@@ -1,5 +1,5 @@
 rails.application.routes.draw do
-  get '/home/:id', to: 'home#index'
+  root 'home#index'
 
   get '/ride', to: 'home#ride', as: 'ride'
 

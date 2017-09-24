@@ -1,7 +1,7 @@
-rails.application.routes.draw do
+Rails.application.routes.draw do
   root 'home#index'
 
-  get '/ride', to: 'home#ride', as: 'ride'
+  get "ride", controller: 'home', action: 'ride', as: 'ride'
 
   get 'drive', to: 'home#drive', as: 'drive'
 

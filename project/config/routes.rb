@@ -6,8 +6,8 @@ resources :users
 
   root controller: 'home', action: 'index'
 
-get "/ride", controller: 'home', action: 'ride', action: 'ride'
-get "/drive", controller: 'home', action: 'drive', action: 'drive'
+get "/ride", controller: 'home', action: 'ride'
+get "/drive", controller: 'home', action: 'drive'
 get "/signin", controller: 'home', action: 'signin'
 get "/signup", controller: 'home', action: 'signup'
 

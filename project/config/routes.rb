@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
-  
+
 resources :user_addresses
 resources :user_profiles
 resources :users
 
   root controller: 'home', action: 'index'
 
-
+get "/ride", controller: 'home', action: 'ride', action: 'ride'
+get "/drive", controller: 'home', action: 'drive', action: 'drive'
+get "/signin", controller: 'home', action: 'signin'
+get "/signup", controller: 'home', action: 'signup'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

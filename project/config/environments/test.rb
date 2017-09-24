@@ -1,4 +1,12 @@
 Rails.application.configure do
+
+  require 'rubygems'
+require 'twilio-ruby'
+require 'sinatra'
+
+get '/' do
+    'Hello World! Currently running version ' + Twilio::VERSION + \
+        ' of the twilio-ruby library.'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # The test environment is used exclusively to run your application's

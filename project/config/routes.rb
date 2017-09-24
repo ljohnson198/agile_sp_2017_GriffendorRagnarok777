@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  
+resources :user_addresses
+resources :user_profiles
+resources :users
+
   root controller: 'home', action: 'index'
 
 

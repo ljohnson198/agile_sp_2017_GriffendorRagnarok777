@@ -1,13 +1,13 @@
-Rails.application.routes.draw do
-  get 'home/index'
+rails.application.routes.draw do
+  root 'home#index'
 
-  get 'home/ride'
+  get '/ride', to: 'home#ride', as: 'ride'
 
-  get 'home/drive'
+  get 'drive', to: 'home#drive', as: 'drive'
 
-  get 'home/signin'
+  get '/signin', to: 'home#signin', as: 'signin'
 
-  get 'home/signup'
+  get '/signup', to: 'home#signup', as: 'signup'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

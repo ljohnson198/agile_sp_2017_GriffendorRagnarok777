@@ -2,32 +2,16 @@
 <html lang="en-US">
   <head>
     <title><%= @title %></title>>
-    <%= stylesheet_link_tag 'application',
-    media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
+ <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
 <body>
-    <div class="container">
-      <header>
-        <h1>Our Ride Share App</h1>
-      </header>
-      <section class="content">
-        <nav>
-          <%=link_to_unless_current 'Home', root_url %>
-          <%=link_to_unless_current 'Signup', users_url %>
-          <%=link_to_unless_current 'Profile', user_profiles_url %>
-          <%=link_to_unless_current 'Address', user_addresses_url %>
-          <%=link_to_unless_current 'Signin', signin_url %>
-          <%=link_to_unless_current 'Drive', drive_url %>
-          <%=link_to_unless_current 'Ride', ride_url %>
-        </nav>
-
-        <%= yield %>
-      </section>
-      <footer>
-        <h4>Copyright &copy; CVTC-Agile Fall Griffendor Ragnarok777 Team</h4>
-      </footer>
-    </div>
-  </body>
+<%=link_to 'Home | ', controller: 'home', action: 'index' %>
+<%=link_to 'Ride | ', controller: 'home', action: 'ride' %>
+<%=link_to 'Drive | ', controller: 'home', action: 'drive' %>
+<%=link_to 'Sign In | ', controller: 'home', action: 'signin' %>
+<%=link_to 'Sign Up', controller: 'home', action: 'signup' %>
+<%= yield %>
+</body>
 </html>

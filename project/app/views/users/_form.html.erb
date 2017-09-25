@@ -1,3 +1,9 @@
+<h1>Sign up today and start ridesharing</h1>
+  <div class="signUp">
+  <div>
+     <div id="signupTxt">
+       <h2>It's free to sign up!</h2>
+
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -39,3 +45,5 @@
     <%= f.submit %>
   </div>
 <% end %>
+       
+    <p>Already have an account? <a href="/signin">Click Here</a> to sign in</p>

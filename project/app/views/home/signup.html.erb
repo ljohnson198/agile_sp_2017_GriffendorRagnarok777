@@ -7,30 +7,29 @@
   <link rel="stylesheet" href="/stylesheets/home.css.scss" type="text/css"/>
 </head>
 <body>
-  <h1>Sign up today and start ridesharing</h1>
-  <div class="signUp">
-  <div>
-     <div id="signupTxt">
-       <h2>It's free to sign up!</h2>
-
+  <h1>Sign up today</h1>
+  <h3>Find a safe ride for cheap</h3>
+     <div class="signUp">
        <form action="/" method="post">
 
        <div class="formProperties">
          <label>First Name<span class="req">*</span></label>
          <input type="text" />
          <label>Last Name: <span class="req">*</span></label>
-         <input type="text" />
+         <input type="text" /><br>
          <label>Email Address<span class="req">*</span></label>
          <input type="email" />
-         <label>Set Password: <span class="req">*</span></label>
+          <label>Set Password: <span class="req">*</span></label>
          <input type="password" />
+         <label>Confirm Password: <span class="req">*</span></label>
+        <input type="password" />
 
          <p>
           <input type="radio" name="driver" value="driver"> Driver<br>
           <input type="radio" name="rider" value="rider"> Rider
         </p>
+        <button type="submit"/>Sign Up Today!</button>
 
-        <button type="submit" class="button button-block"/>Sign Up Today!</button>
         <p>Already have an account? <a href="/signin">Click Here</a> to sign in</p>
        </div>
 

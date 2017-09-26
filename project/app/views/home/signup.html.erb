@@ -5,42 +5,56 @@
   <title>Chippewa Valley - The One</title>
   <link rel="stylesheet" href="/stylesheets/application.css" type="text/css"/>
   <link rel="stylesheet" href="/stylesheets/home.css.scss" type="text/css"/>
+  <link rel="stylesheet" href="/stylesheets/sign_in_upForm.css" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 </head>
 <body>
-  <h1>Sign up today</h1>
-  <h3>Find a safe ride for cheap</h3>
-     <div class="signUp">
-       <form action="/" method="post">
 
-       <div class="formProperties">
-         <label>First Name<span class="req">*</span></label>
-         <input type="text" />
-         <label>Last Name: <span class="req">*</span></label>
-         <input type="text" /><br>
-         <label>Email Address<span class="req">*</span></label>
-         <input type="email" />
-          <label>Set Password: <span class="req">*</span></label>
-         <input type="password" />
-         <label>Confirm Password: <span class="req">*</span></label>
-        <input type="password" />
+     <div class="container">
+       <form class="pure-form">
+         <form class="pure-form pure-form-aligned">
+         <fieldset>
+           <h1>Sign up today</h1>
+           <h3>Find a safe ride for cheap</h3>
+             <div class="pure-control-group">
+                 <label for="name">First Name: </label>
+                 <input id="fName" type="text" placeholder="First Name">
+             </div>
+<br>
+             <div class="pure-control-group">
+                 <label for="lname">Last Name: </label>
+                 <input id="lName" type="text" placeholder="Last Name">
+             </div>
+<br>
+            <div>
+            <p>Create a username</p>
+              <label for="username">Username: </label>
+              <input id="username" type="text" placeholder="Username">
+              </div>
+<br>
+            <div class="pure-control-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password">
+            </div>
+<br>
+             <div class="pure-control-group">
+                 <label for="confirmP">Confirm Password</label>
+                 <input id="confirmP" type="password" placeholder="Confirm Password">
+             </div>
+<br>
+   <p>
+     <label>Which one are you?</label>
+<br>
+    <input type="radio" name="driver" value="driver"> Driver<br>
+    <input type="radio" name="rider" value="rider"> Rider
+  </p>
+                 <button type="submit" class="pure-button pure-button-primary">Sign Up</button>
 
-         <p>
-          <input type="radio" name="driver" value="driver"> Driver<br>
-          <input type="radio" name="rider" value="rider"> Rider
-        </p>
-        <button type="submit"/>Sign Up Today!</button>
-
-        <p>Already have an account? <a href="/signin">Click Here</a> to sign in</p>
-       </div>
-
-       </form>
-
-     </div>
 
 
-     </div>
-
-   </div>
+         </fieldset>
+         <p>Already have an account? <a href="/signin">Click Here</a> to sign in</p>
+     </form>
 
 </div>
 </body>

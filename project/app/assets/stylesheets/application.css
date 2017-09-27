@@ -20,10 +20,10 @@
 
  footer {
    position:relative;
-    left:0px;
-    bottom:0px;
-    height:30px;
+   left: 0px;
+   right:0px;
     width:100%;
     background:#0078e7;
     text-align: center;
+    height: 30px;
  }

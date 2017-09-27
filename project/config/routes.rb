@@ -11,7 +11,8 @@ get "/drive", controller: 'home', action: 'drive'
 get "/signin", controller: 'home', action: 'signin'
 get "/signup", controller: 'home', action: 'signup'
 
-  # The priority is based upon order of creation: first created -> highest priority.
+  # get "/signup", controller: 'home', action: 'signup'
+  #The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

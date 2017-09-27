@@ -18,12 +18,16 @@
    min-height: 100%;
  }
 
+body {
+  margin-bottom: 30px;
+}
+
  footer {
-   position:relative;
+   position: fixed;
    left: 0px;
    right:0px;
-    width:100%;
-    background:#0078e7;
-    text-align: center;
-    height: 30px;
+   bottom:0px;
+   background:#0078e7;
+   text-align: center;
+   height: 30px;
  }

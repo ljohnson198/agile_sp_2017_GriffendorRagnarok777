@@ -1,0 +1,18 @@
+p {
+  min-width: 50%;
+  min-height: inherit;
+}
+
+.titles {
+  margin-top: 10%;
+}
+
+.backImage {
+  margin:40px;
+}
+
+form {
+  margin: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}

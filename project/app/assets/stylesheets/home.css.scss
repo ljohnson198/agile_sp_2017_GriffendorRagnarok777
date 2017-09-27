@@ -9,13 +9,23 @@
 	font-style: normal;
 	text-decoration: none;
 	outline-style: none;
+	color: black;
+	text-shadow: 0px 0px 5px white;
 }
-
+/*
+.field {
+	text-align: center;
+}
+textarea {
+	width: 150%;
+	text-align: center;
+}
+*/
 body {
   text-align: center;
 	background: linear-gradient(blue, lightblue) no-repeat center center fixed;
 	//background-repeat: no-repeat;
-  color: lightgray;
+  //color: lightgray;
 	min-height: 100%;
 }
 
@@ -25,12 +35,12 @@ body li {
 
 body a {
 	display: block;
-	color: lightgray;
+	//color: lightgray;
 	margin: 2px auto;
 	background: linear-gradient(lightblue, blue);
 	width: 250px;
 	height: 25px;
-	text-shadow: 2px 2px 3px black;
+	//text-shadow: 2px 2px 3px black;
 	box-shadow: 2px 2px 3px black;
 	border-radius: 10px;
 }
@@ -48,8 +58,8 @@ p > a {
   margin: 5px auto;
   max-width: 250px;
 	min-width: 250px;
-  color: white;
-	text-shadow: 2px 2px 3px black;
+  //color: white;
+	//text-shadow: 2px 2px 3px black;
 	box-shadow: 2px 2px 3px black;
 	background: linear-gradient(lightblue, blue);
 	border-radius: 10px;
@@ -72,7 +82,7 @@ p > a {
 }
 
 .formProperties a {
-  color: white;
+  //color: white;
   text-decoration: none;
 }
 
@@ -86,8 +96,8 @@ p > a {
   margin: 5px auto;
   max-width: 250px;
 	min-width: 250px;
-  color: white;
-	text-shadow: 2px 2px 3px black;
+  //color: white;
+	//text-shadow: 2px 2px 3px black;
 	box-shadow: 2px 2px 3px black;
 	background: linear-gradient(lightblue, blue);
 	border-radius: 10px;
@@ -108,7 +118,7 @@ p > a {
 }
 
 #login a {
-  color: white;
+  //color: white;
   text-decoration: none;
 }
 
@@ -117,9 +127,15 @@ p > a {
 }
 
 footer {
-	text-shadow: 2px 2px 3px black;
+	//text-shadow: 2px 2px 3px black;
 }
 
+div.backImage img {
+	width: 100%;
+	height: auto;
+	max-width: 620px;
+}
+/*
 button {
 	color: blue;
 	box-shadow: 0px 0px 5px white;
@@ -130,3 +146,4 @@ button:hover {
 	color: white;
 	background: blue;
 }
+*/

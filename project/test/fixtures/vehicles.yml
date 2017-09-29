@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  userName: MyString
+  : MyText
+  vehicleType: MyString
+  : MyText
+  maxRiders: MyString
+  : 1
+
+two:
+  userName: MyString
+  : MyText
+  vehicleType: MyString
+  : MyText
+  maxRiders: MyString
+  : 1

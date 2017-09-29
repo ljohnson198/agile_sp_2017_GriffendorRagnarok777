@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user_profile.userName %>
+</p
+
+<p>
+  <strong>Age:</strong>
+  <%= @user_profile.age %>
+</p>
+<p>
+  <strong>Gender:</strong>
+  <%= @user_profile.gender %>
+</p>
+<p>
+  <strong>Streetaddress:</strong>
+  <%= @user_profile.streetAddress %>
+</p>
+<p>
+  <strong>City:</strong>
+  <%= @user_profile.City %>
+</p>
+<p>
+  <strong>State:</strong>
+  <%= @user_profile.State %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @user_profile.Zip %>
+</p>
+
+<p>
+  <strong>Profilepicurl:</strong>
+  <%= @user_profile.profilePicUrl %>
+</p>
+
+<%= link_to 'Edit', edit_user_profile_path(@user_profile) %> |
+<%= link_to 'Back', user_profiles_path %>

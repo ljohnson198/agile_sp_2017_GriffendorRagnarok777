@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :event_lists
+
   resources :vehicles
 
   resources :user_profiles

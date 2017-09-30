@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170928231846) do
+ActiveRecord::Schema.define(version: 20170930131409) do
 
   create_table "event_lists", force: true do |t|
     t.date     "eventDate"
@@ -28,9 +28,9 @@ ActiveRecord::Schema.define(version: 20170928231846) do
     t.text     "PUCity"
     t.text     "PUState"
     t.text     "PUZip"
-    t.text     "smokingAllowed"
+    t.boolean  "smokingAllowed"
     t.text     "createdBy"
-    t.text     "eventDriver"
+    t.boolean  "eventDriver"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -13,89 +13,72 @@
 
   <div class="field">
     <%= f.label :eventDate %><br>
-    <%= f.text_field :eventDate %>
+    <%= f.date_select :eventDate %>
   </div>
-
   <div class="field">
     <%= f.label :eventTime %><br>
-    <%= f.text_field :eventTime %>
+    <%= f.time_select :eventTime %>
   </div>
-
   <div class="field">
     <%= f.label :eventName %><br>
-    <%= f.text_field :eventName %>
+    <%= f.text_area :eventName %>
   </div>
-
   <div class="field">
     <%= f.label :eventDescription %><br>
-    <%= f.text_field :eventDescription %>
+    <%= f.text_area :eventDescription %>
   </div>
-
   <div class="field">
     <%= f.label :streetAddress %><br>
-    <%= f.text_field :streetAddress %>
+    <%= f.text_area :streetAddress %>
   </div>
-
   <div class="field">
     <%= f.label :City %><br>
-    <%= f.text_field :City %>
+    <%= f.text_area :City %>
   </div>
-
   <div class="field">
     <%= f.label :State %><br>
-    <%= f.text_field :State %>
+    <%= f.text_area :State %>
   </div>
-
   <div class="field">
     <%= f.label :Zip %><br>
-    <%= f.text_field :Zip %>
+    <%= f.text_area :Zip %>
   </div>
-
   <div class="field">
     <%= f.label :nbrOfRiders %><br>
-    <%= f.text_field :nbrOfRiders %>
+    <%= f.number_field :nbrOfRiders %>
   </div>
-
   <div class="field">
     <%= f.label :vehicleType %><br>
-    <%= f.text_field :vehicleType %>
+    <%= f.text_area :vehicleType %>
   </div>
-
   <div class="field">
     <%= f.label :PUstreetAddress %><br>
-    <%= f.text_field :PUstreetAddress %>
+    <%= f.text_area :PUstreetAddress %>
   </div>
-
   <div class="field">
     <%= f.label :PUCity %><br>
-    <%= f.text_field :PUCity %>
+    <%= f.text_area :PUCity %>
   </div>
-
   <div class="field">
     <%= f.label :PUState %><br>
-    <%= f.text_field :PUState %>
+    <%= f.text_area :PUState %>
   </div>
-
   <div class="field">
     <%= f.label :PUZip %><br>
-    <%= f.text_field :PUZip %>
+    <%= f.text_area :PUZip %>
   </div>
-
   <div class="field">
     <%= f.label :smokingAllowed %><br>
-    <%= f.text_field :smokingAllowed %>
+    <%= f.check_box :smokingAllowed %>
   </div>
-
   <div class="field">
     <%= f.label :createdBy %><br>
-    <%= f.text_field :createdBy %>
+    <%= f.text_area :createdBy %>
   </div>
-
   <div class="field">
     <%= f.label :eventDriver %><br>
-    <%= f.text_field :eventDriver %>
+    <%= f.check_box :eventDriver %>
   </div>
-
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -15,9 +15,9 @@ class CreateEventLists < ActiveRecord::Migration
       t.text :PUCity
       t.text :PUState
       t.text :PUZip
-      t.text :smokingAllowed
+      t.boolean :smokingAllowed
       t.text :createdBy
-      t.text :eventDriver
+      t.boolean :eventDriver
 
       t.timestamps
     end

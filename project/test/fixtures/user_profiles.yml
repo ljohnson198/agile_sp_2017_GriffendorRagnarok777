@@ -1,11 +1,37 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  userName: hsimpmson
-  gender: Male
-  smoking: false
+  userName: MyString
+  : MyText
+  age: MyString
+  : 1
+  gender: MyString
+  : MyText
+  streetAddress: MyString
+  : MyText
+  City: MyString
+  : MyText
+  State: MyString
+  : MyText
+  Zip: MyString
+  : MyText
+  profilePicUrl: MyString
+  : MyText
 
 two:
-  userName: msimpson
-  gender: Female
-  smoking: false
+  userName: MyString
+  : MyText
+  age: MyString
+  : 1
+  gender: MyString
+  : MyText
+  streetAddress: MyString
+  : MyText
+  City: MyString
+  : MyText
+  State: MyString
+  : MyText
+  Zip: MyString
+  : MyText
+  profilePicUrl: MyString
+  : MyText

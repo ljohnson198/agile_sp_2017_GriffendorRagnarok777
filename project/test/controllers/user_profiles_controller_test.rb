@@ -18,7 +18,7 @@ class UserProfilesControllerTest < ActionController::TestCase
 
   test "should create user_profile" do
     assert_difference('UserProfile.count') do
-      post :create, user_profile: { gender: @user_profile.gender, smoking: @user_profile.smoking, userName: @user_profile.userName }
+      post :create, user_profile: { : @user_profile., : @user_profile., : @user_profile., : @user_profile., : @user_profile., : @user_profile., : @user_profile., : @user_profile., City: @user_profile.City, State: @user_profile.State, Zip: @user_profile.Zip, age: @user_profile.age, gender: @user_profile.gender, profilePicUrl: @user_profile.profilePicUrl, streetAddress: @user_profile.streetAddress, userName: @user_profile.userName }
     end
 
     assert_redirected_to user_profile_path(assigns(:user_profile))
@@ -35,7 +35,7 @@ class UserProfilesControllerTest < ActionController::TestCase
   end
 
   test "should update user_profile" do
-    patch :update, id: @user_profile, user_profile: { gender: @user_profile.gender, smoking: @user_profile.smoking, userName: @user_profile.userName }
+    patch :update, id: @user_profile, user_profile: { : @user_profile., : @user_profile., : @user_profile., : @user_profile., : @user_profile., : @user_profile., : @user_profile., : @user_profile., City: @user_profile.City, State: @user_profile.State, Zip: @user_profile.Zip, age: @user_profile.age, gender: @user_profile.gender, profilePicUrl: @user_profile.profilePicUrl, streetAddress: @user_profile.streetAddress, userName: @user_profile.userName }
     assert_redirected_to user_profile_path(assigns(:user_profile))
   end
 

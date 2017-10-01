@@ -10,6 +10,7 @@
        <h3>It's free to sign up!</h3>
 </div>
 <%= form_for(@user) do |f| %>
+  
   <% if @user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
@@ -48,14 +49,19 @@
 
   <div class="field">
     <%= f.label :password %><br>
-    <%= f.text_area :password %>
+    <%= f.password_field :password %>
 </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+  
+    
+<%= link_to 'Sign Up your Vehicle', new_vehicle_path %>
+<%= link_to 'Create your profile', new_user_profile_path %>
+  
 <% end %>
-    <p>Already have an account? <a href="/signin">Click Here</a> to sign in</p>
-
+    <p>Already have an account? <a href="/signin">Click here to sign in</a></p>
+  
 </body>
 <div>
 <footer>Copyright &copy; CVTC-Agile Fall 2017 Griffendor Team</footer>

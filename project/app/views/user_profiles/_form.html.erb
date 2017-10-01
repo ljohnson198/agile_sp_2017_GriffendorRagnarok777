@@ -13,17 +13,38 @@
 
   <div class="field">
     <%= f.label :userName %><br>
-    <%= f.text_area :userName %>
+    <%= f.text_field :userName %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
   </div>
   <div class="field">
     <%= f.label :gender %><br>
-    <%= f.text_area :gender %>
+    <%= f.text_field :gender %>
   </div>
   <div class="field">
-    <%= f.label :smoking %><br>
-    <%= f.check_box :smoking %>
+    <%= f.label :streetAddress %><br>
+    <%= f.text_field :streetAddress %>
+  </div>
+  <div class="field">
+    <%= f.label :City %><br>
+    <%= f.text_field :City %>
+  </div>
+  <div class="field">
+    <%= f.label :State %><br>
+    <%= f.text_field :State %>
+  </div>
+  <div class="field">
+    <%= f.label :Zip %><br>
+    <%= f.text_field :Zip %>
+  </div>
+  <div class="field">
+    <%= f.label :profilePicUrl %><br>
+    <%= f.text_field :profilePicUrl %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+

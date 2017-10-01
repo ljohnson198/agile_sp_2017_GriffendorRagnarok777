@@ -4,7 +4,11 @@ class EventListsController < ApplicationController
   # GET /event_lists
   # GET /event_lists.json
   def index
+    if params[:q]
+    @event_lists = EventList.find_all_by_query(params[:q])
+    else
     @event_lists = EventList.all
+    end
   end
 
   # GET /event_lists/1
